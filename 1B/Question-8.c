@@ -1,4 +1,4 @@
-// Convert fahrenheit to Celsius
+// Convert Fahrenheit to Celsius
 
 #include <stdio.h>
 
