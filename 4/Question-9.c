@@ -1,31 +1,24 @@
-// Transpose of a 2D Matrix
-
 #include <stdio.h>
-
 int main() {
-    int a[2][3], transpose[3][2];
-    int i, j;
+    int r, c, i, j;
+    printf("Enter number of rows and columns: ");
+    scanf("%d%d", &r, &c);
 
-    printf("Enter elements of 2x3 matrix: ");
-    for(i = 0; i < 2; i++) {
-        for(j = 0; j < 3; j++) {
+    int a[r][c], transpose[c][r];
+
+    printf("Enter elements of %d x %d matrix:\n", r, c);
+    for(i = 0; i < r; i++)
+        for(j = 0; j < c; j++)
             scanf("%d", &a[i][j]);
-        }
-    }
 
-    for(i = 0; i < 2; i++) {
-        for(j = 0; j < 3; j++) {
+    for(i = 0; i < r; i++)
+        for(j = 0; j < c; j++)
             transpose[j][i] = a[i][j];
-        }
-    }
 
-    printf("Transpose of the matrix (3x2):\n");
-    for(i = 0; i < 3; i++) {
-        for(j = 0; j < 2; j++) {
+    printf("Transpose of the matrix (%dx%d):\n", c, r);
+    for(i = 0; i < c; i++, printf("\n"))
+        for(j = 0; j < r; j++)
             printf("%d ", transpose[i][j]);
-        }
-        printf("\n");
-    }
 
     return 0;
 }

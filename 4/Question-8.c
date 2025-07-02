@@ -1,33 +1,25 @@
-// Add two Matrices
-
 #include <stdio.h>
-
 int main() {
-    int a[2][2], b[2][2], sum[2][2];
-    int i, j;
+    int r, c, i, j;
+    printf("Enter number of rows and columns: ");
+    scanf("%d%d", &r, &c);
 
-    printf("Enter elements for 1st 2x2 Matrix: ");
-    for(i = 0; i < 2; i++) {
-        for(j = 0; j < 2; j++) {
+    int a[r][c], b[r][c], sum[r][c];
+
+    printf("Enter elements for 1st matrix:\n");
+    for(i = 0; i < r; i++)
+        for(j = 0; j < c; j++)
             scanf("%d", &a[i][j]);
-        }
-    }
 
-    printf("Enter elements for 2nd 2x2 Matrix: ");
-    for(i = 0; i < 2; i++) {
-        for(j = 0; j < 2; j++) {
+    printf("Enter elements for 2nd matrix:\n");
+    for(i = 0; i < r; i++)
+        for(j = 0; j < c; j++)
             scanf("%d", &b[i][j]);
-        }
-    }
 
     printf("Sum of the two matrices:\n");
-    for(i = 0; i < 2; i++) {
-        for(j = 0; j < 2; j++) {
-            sum[i][j] = a[i][j] + b[i][j];
-            printf("%d ", sum[i][j]);
-        }
-        printf("\n");
-    }
+    for(i = 0; i < r; i++, printf("\n"))
+        for(j = 0; j < c; j++)
+            printf("%d ", a[i][j] + b[i][j]);
 
     return 0;
 }
