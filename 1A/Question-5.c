@@ -6,10 +6,10 @@ int main() {
     int a, b;
     float result;
 
-    printf("Enter two numbers (numerator and denominator): ");
+    printf("Enter two numbers  ");
     scanf("%d %d", &a, &b);
 
-    result = (float)a / b; // b != 0
+    result = a / b;
 
     printf("Division = %.2f\n", result);
 

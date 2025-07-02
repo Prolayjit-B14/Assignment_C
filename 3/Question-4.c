@@ -5,7 +5,7 @@
 int main() {
     int start, end, i;
 
-    printf("Enter the range :(start and end) ");
+    printf("Enter the range : ");
     scanf("%d %d", &start, &end);
 
     printf("Odd numbers between %d and %d are:\n", start, end);

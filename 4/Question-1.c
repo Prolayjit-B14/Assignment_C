@@ -10,7 +10,7 @@ int main() {
     }
     printf("The Array values are:\n");
     for(i = 0; i < 5; i++) {
-        printf("%d", a[i]);
+        printf("%d ", a[i]);
     }
     return 0;
 }

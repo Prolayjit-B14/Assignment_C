@@ -6,7 +6,7 @@ int main() {
     int a[2][3], transpose[3][2];
     int i, j;
 
-    printf("Enter elements of 2x3 matrix:\n");
+    printf("Enter elements of 2x3 matrix: ");
     for(i = 0; i < 2; i++) {
         for(j = 0; j < 3; j++) {
             scanf("%d", &a[i][j]);
